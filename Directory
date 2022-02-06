@@ -1,0 +1,45 @@
+#  $*	contient tous les arguments passés à la fonction
+#  $#	contient le nombre d'arguments
+#  $?	contient le code de retour de la dernière opération
+#  $0	contient le nom du script
+#  $n	contient l'argument n, n étant un nombre
+#  $!	contient le PID de la dernière commande lancée
+
+title="Directory Script"
+echo $var
+
+#  files param
+echo -e "\033[0;34mNumbers args :  \033[0;37m"$#
+echo -e "\033[0;34mFirst arg :  \033[0;37m"$*
+echo -e "\033[0;34mSecond arg :  \033[0;37m"$2
+echo -e "\033[0;34mreturn code last echo :  \033[0;37m"$?
+
+#  tab gest
+tab=("case 1" "case 2")
+
+echo -e "\033[0;34mlength of tab: \033[0;37m"${#tab[@]}
+echo -e "\033[0;34mprint all : \033[0;37m"${tab[@]}
+echo -e "\033[0;34mprint first elem: \033[0;37m"${tab[0]}"\033[0;34m and second : \033[0;37m"${tab[1]}
+
+# color
+# echo -e '\033[A;B;Cm toto \033[0m'
+
+# Code	Effet
+# 0	    Normal
+# 1	    Gras
+# 21	Non-gras
+# 2	    Sombre
+# 22	Non-sombre
+# 3	    Italique
+# 23	Non-italique
+# 4	    Souligné
+# 24	Non-souligné
+# 5	    Clignotant
+# 25	Non-clignotant
+# 7	    Inversé
+# 27	Non-inversé
+# 8	    Invisible
+# 28	Non-invisible
+# 9	    Barré
+# 29	Non-barré
+           
